@@ -5,6 +5,28 @@
 	Overwriting Default Theme Styles for Better Hanlding Updates
 -----------------------------------------------------------------*/
 
+.tech-container{
+    display: flex;
+    flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
 
-
-
+.tech-skills{
+	display: flex;
+	flex-direction: column;
+	width: 200px;
+	align-items: center;
+	margin: 10px;
+}
+.tech-icon{
+	/* border: 1px solid red; */
+	display: inline-block;
+    min-width: 55px;
+    min-height: 55px;
+    padding: 5px;
+    margin-top: 0;
+    margin-bottom: 0.8rem;
+    color: #4c4d4d;
+    border-radius: 0;
+}
