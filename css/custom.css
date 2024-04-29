@@ -30,3 +30,52 @@
     color: #4c4d4d;
     border-radius: 0;
 }
+
+.contact-form{
+	display: flex;
+	flex-direction: column;
+}
+
+.contact-label{
+	padding: .810rem .96rem;
+    height: inherit;
+	border-color: #dae1e3;
+    font-size: 16px;
+    color: #656565;
+}
+
+.contact-input{
+	border-color: #dae1e3;
+    font-size: 16px;
+    color: #656565;
+	box-sizing: border-box;
+	display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: .375rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+	margin-bottom: 20px;
+}
+
+.send-btn{
+	background-color: #20c997;
+    border-color: #20c997;
+	color: white;
+	padding: 0.8rem 2.6rem;
+    font-weight: 500;
+    border-width: 2px;
+	border-radius: var(--bs-border-radius-pill);
+	border: none;
+	width: 220px;
+	align-self: center;
+}

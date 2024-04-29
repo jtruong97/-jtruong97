@@ -27,7 +27,7 @@ $toEmail = "jas.truongg@gmail.com"; // Replace Your Email Address
   // Sender's Email
 --------------------------------------------- */
 
-$fromEmail = "truongjasmine1222@gmail.com";  // Replace Company's Email Address (preferably currently used Domain Name)
+$fromEmail = "no-reply@github.io";  // Replace Company's Email Address (preferably currently used Domain Name)
 $fromName = "Jasmine Portfolio"; // Replace Company Name
 
 
@@ -42,7 +42,7 @@ $recaptcha_secret = 'YOUR_RECAPTCHA_SECRET_KEY'; // Your Google reCaptcha Secret
 /* --------------------------------------------
   // Subject
 --------------------------------------------- */
-$subject = "Form Response from Your Website"; // Your Subject
+$subject = "Portfolio response"; // Your Subject
 
 
 if (isset($_POST['name'])) {
@@ -54,7 +54,14 @@ if (isset($_POST['name'])) {
 $mail = new PHPMailer(true);
 
 /* Add your SMTP Codes after this Line */
-
+$mail->isSMTP();
+$mail->SMTPDebug = 0;
+$mail->Host = 'mail.jtruong97.github.io';
+$mail->SMTPAuth = true;
+$mail->Username = "yourname@jtruong97.github.io";
+$mail->Password = "yourpassword";
+$mail->SMTPSecure = 'tls';
+$mail->Port = 587;
 
 // End of SMTP
 

@@ -138,7 +138,7 @@
                 <li class=""><span class="fw-600 me-2">Email:</span><a href="mailto:jas.truongg@gmail.com">jas.truongg@gmail.com</a></li>
                 <li class="border-0"><span class="fw-600 me-2">From:</span>San Francisco, California</li>
               </ul>
-              <a href="images/Resume21.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-primary rounded-pill">Resume</a> </div>
+              <a href="images/Resume24.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-primary rounded-pill">Resume</a> </div>
           </div>
         </div>
       </div>
@@ -415,7 +415,7 @@
           </div>
           <div class="col-md-8 col-xl-9 order-0 order-md-1">
             <h2 class="mb-3 text-5 text-uppercase text-center text-md-start">Send me a message</h2>
-			<form id="contact-form" action="./php/mail.php" method="post">
+			<!-- <form id="contact-form" action="./php/mail.php" method="post">
 
 			<div class="row g-4">
                 <div class="col-xl-6">
@@ -432,7 +432,26 @@
               <p class="text-center mt-4 mb-0">
 				<button id="submit-btn" class="btn btn-primary rounded-pill d-inline-flex" type="submit">Send Message</button>
               </p>
-            </form>
+            </form> -->
+
+          <form
+            action="https://formspree.io/f/xayrvqdj"
+            method="POST"
+            class="contact-form"
+          >
+            <label className="contact-label">
+              <input type="text" name="name" required placeholder="Name" class="contact-input">
+            </label>
+            <label>
+              <input type="email" name="email" required placeholder="Email" class="contact-input">
+            </label>
+            <label>
+              <textarea name="message"placeholder="Message" required rows='5' class="contact-input"></textarea>
+            </label>
+            <!-- your other form fields go here -->
+            <button type="submit" class="send-btn">Send Message</button>
+          </form>
+
           </div>
         </div>
       </div>
